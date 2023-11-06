@@ -9,8 +9,6 @@ def funcaoTeste(x,y,z) -> list:
 outputFunc = funcaoTeste(10, 100, 1000)
 print(outputFunc)
 
-#################################################################################################
-
 # ! Uso de dicionario no python.
 
 menu = {
