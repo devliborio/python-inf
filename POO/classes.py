@@ -7,21 +7,21 @@
 class Automoveis:
     # Método Construtor:
     # Métodos, ações, comportamentos, dos objetos.
-    def __init__(self, marca, modelo, cor, ano, preco, maxima):
+    def __init__(self, marca, modelo, cor, maxima, data=None):
         # Atributos, propriedades:
         self.marca = marca
         self.modelo = modelo
         self.cor = cor
-        self.ano = ano
-        self.preco = preco
+        self.ano = data
         self.veloMax = maxima
         self.veloAtual = 0
         self.ligado = False
 
 
     def acelerar(self, valor):
-        if self.ligado and (self.veloAtual + valor) <= self.veloMax: # Se o carro estiver ligado e a velocidade atual for menor ou igual a velocidade maxima, acelere.
-            self.veloAtual += valor
+        if self.ligado: 
+            if (self.veloAtual + valor) <= self.veloMax:
+                self.veloAtual += valor
         else:
             self.veloAtual = self.veloMax
 
