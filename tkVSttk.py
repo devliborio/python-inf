@@ -8,7 +8,7 @@ janela.geometry("400x400")
 btn1 = tk.Button(janela, text="Botão Antigo").pack()
 btn2 = ttk.Button(janela, text="Botão Novo").pack()
 
-state_br = ["Bahia", "São Paulo", "Brasilia", "Rio de Janeiro", "Goiaisto", "Acre"]
+state_br = ["Bahia", "São Paulo", "Brasilia", "Rio de Janeiro", "Goiais", "Acre"]
 
 def mostrar():
     print(cbobx.get())
