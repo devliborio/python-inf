@@ -8,14 +8,14 @@ modelo = input("Informe o modelo do veiculo: ")
 cor = input("Informe a cor do veiculo: ")
 maxima = int(input("Informe a velocidade maxima do veiculo: "))
 
-chevette = Automoveis(marca, modelo, cor, maxima)
+car = Automoveis(marca, modelo, cor, maxima)
 
 print(" ========================== RETORNO DE DADOS ============================ ")
-print("A marca do veiculo é: ", chevette.marca)
-print("O modelo do veiculo é: ", chevette.modelo)
-print("A cor do veiculo é: ", chevette.cor)
-print("A velocidade maxima do veiculo é: ", chevette.veloMax)
-chevette.ligado = True  # Ligando o Chevette...
+print("A marca do veiculo é: ", car.marca)
+print("O modelo do veiculo é: ", car.modelo)
+print("A cor do veiculo é: ", car.cor)
+print("A velocidade maxima do veiculo é: ", car.veloMax)
+car.ligado = True  # Ligando o Chevette...
 for a in range(4):
-    chevette.acelerar(50)
-print("Velocidade Atual: ", chevette.veloAtual)  # VeloMax
+    car.acelerar(50)
+print("Velocidade Atual: ", car.veloAtual)  # VeloMax
