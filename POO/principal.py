@@ -2,7 +2,6 @@ from classes import (
     Automoveis,
 )
 import tkinter as tk
-import tkinter.ttk as ttk
 
 window = tk.Tk()
 window.geometry("800x600")
@@ -34,14 +33,14 @@ txtCor = tk.Entry(window)
 txtCor.grid(row=2, column=1)
 
 max = tk.IntVar()
-txtMax = ttk.Entry(window, textvariable=max)
+txtMax = tk.Entry(window, textvariable=max)
 txtMax.grid(row=3, column=1)
 
 def execute():
     chevette = Automoveis(txtMarca, txtModelo, txtCor, max.get())
     chevette.ligado = True  # Ligando o Chevette...
-    # for a in range(4):
-    chevette.acelerar(200)
+    for a in range(4):
+        chevette.acelerar(50)
     print("Velocidade Atual: ", chevette.veloAtual)  # VeloMax
     print(chevette.veloMax)
 
