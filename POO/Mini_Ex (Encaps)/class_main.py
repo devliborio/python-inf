@@ -15,15 +15,20 @@ class constasBancarias:
         if self.__saldo + valor >= 0:
             self.__saldo += valor
         else:
-            return f"Saldo Insuficiente!"
+           print(f"Saldo Insuficiente!")
 
 
 # Mesa de Teste
 guilhermeCC = constasBancarias("Guilherme Libório", 210801 - 8)
-print("Saldo atual: ", guilhermeCC.movimentar)  # 0
+print("Saldo atual: ", guilhermeCC.movimentar,"\n")  # 0
+
 guilhermeCC.movimentar = 1000
 print("Fundos adicionados!")
-print("Saldo atual: ", guilhermeCC.movimentar)  # 1000
+print("Saldo atual: ", guilhermeCC.movimentar,"\n")  # 1000
+
 guilhermeCC.movimentar = -400
 print("Fundos removidos!")
-print("Saldo atual: ", guilhermeCC.movimentar)  # 600
+print("Saldo atual: ", guilhermeCC.movimentar,"\n")  # 600
+
+guilhermeCC.movimentar = -600.01
+print("Saldo atual: ", guilhermeCC.movimentar)  # SALDOS INSUFICIENTES!
