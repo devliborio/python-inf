@@ -19,7 +19,7 @@ class constasBancarias:
 
 
 # Mesa de Teste
-guilhermeCC = constasBancarias("Guilherme Libório", 210801 - 8)
+guilhermeCC = constasBancarias("Guilherme Libório", 210801-8)
 print("Saldo atual: ", guilhermeCC.movimentar,"\n")  # 0
 
 guilhermeCC.movimentar = 1000
