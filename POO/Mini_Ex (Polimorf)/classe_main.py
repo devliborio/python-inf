@@ -1,6 +1,6 @@
 class Automoveis:
     # Método Construtor:
-    def __init__(self, nome, motores, rodas):
+    def __init__(self, nome, motores, rodas=0):
         self.nome = nome
         self.motores = motores
         self.rodas = rodas
@@ -35,7 +35,7 @@ print("Avião:")
 print("Nome:", aviao.nome, "Motor(es):", aviao.motores, "Rodas:", aviao.rodas)
 print(aviao.buzinar())
 
-barco = Barco("Mercedes", 2, 0)
+barco = Barco("Mercedes", 2)
 print("Barco:")
 print("Nome:", barco.nome, "Motor(es):", barco.motores, "Rodas:", barco.rodas)
 print(barco.buzinar())
