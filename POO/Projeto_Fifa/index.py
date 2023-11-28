@@ -116,5 +116,5 @@ print("O mascote escolhido para o time foi: ", teamData.teamMascot)
 
 print("\n")
 
-print(" ========================== JOGADOR CADASTRADO ============================ ")
-playerData = Player(playerName, teamNamePlayer, numberShirt)
+# print(" ========================== JOGADOR CADASTRADO ============================ ")
+# # playerData = Player(playerName, teamNamePlayer, numberShirt)
